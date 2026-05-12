@@ -8,7 +8,8 @@ const CATEGORIES = [
   'Environmental Sciences',
   'Mathematics',
   'Earth and Space Science',
-  'Energy Science'
+  'Energy Science',
+  'General Science'
 ];
 
 const loginScreen = document.getElementById('login-screen');
@@ -1025,6 +1026,278 @@ function sampleQuestions() {
       question: 'Which pH value describes a basic solution?',
       options: ['2', '5', '7', '10'],
       answerIndex: 3
+    },
+    {
+      id: 'q16',
+      category: 'Chemistry',
+      difficulty: 'easy',
+      question: 'An aqueous solution in which the concentration of OH⁻ ions is greater than that of H⁺ ions is:',
+      options: ['basic', 'acidic', 'neutral', 'in equilibrium'],
+      answerIndex: 0
+    },
+    {
+      id: 'q17',
+      category: 'Earth and Space Science',
+      difficulty: 'medium',
+      question: 'The overall charge at the top and bottom, respectively, of a towering cumulonimbus cloud during a thunderstorm is:',
+      options: ['positive, positive', 'positive, negative', 'negative, positive', 'negative, negative'],
+      answerIndex: 1
+    },
+    {
+      id: 'q18',
+      category: 'Earth and Space Science',
+      difficulty: 'easy',
+      question: 'A lightning bolt is seen and its accompanying thunder is heard 15 seconds later. This means the storm is most likely how many miles away:',
+      options: ['3', '6', '9', '15'],
+      answerIndex: 0
+    },
+    {
+      id: 'q19',
+      category: 'Biology',
+      difficulty: 'easy',
+      question: 'Human epidermis is mostly composed of which of the following basic animal tissue types:',
+      options: ['epithelial', 'connective', 'nervous', 'muscle'],
+      answerIndex: 0
+    },
+    {
+      id: 'q20',
+      category: 'Physics',
+      difficulty: 'easy',
+      question: 'A constant force acting on a body experiencing no change in its environment will give the body:',
+      options: ['constant acceleration', 'constant speed', 'constant velocity', 'zero acceleration'],
+      answerIndex: 0
+    },
+    {
+      id: 'q21',
+      category: 'Earth and Space Science',
+      difficulty: 'easy',
+      question: 'Which of the following is a sedimentary rock:',
+      options: ['slate', 'marble', 'basalt', 'sandstone'],
+      answerIndex: 3
+    },
+    {
+      id: 'q22',
+      category: 'Earth and Space Science',
+      difficulty: 'hard',
+      question: 'Which of the following is LEAST accurate about minerals:',
+      options: ['calcite has a hardness of 3 on most of its surfaces but a hardness of 4 along the crystal face perpendicular to its long axis', 'the Moh’s scale measures the absolute hardness of minerals', 'a mineral’s chemical composition largely determines its crystal shape and cleavage pattern', 'a mineral’s color is the same as its streak'],
+      answerIndex: 3
+    },
+    {
+      id: 'q23',
+      category: 'General Science',
+      difficulty: 'easy',
+      question: 'Which of the following is closest to the meaning of the suffix ‘lith’:',
+      options: ['outside', 'stone', 'side', 'surface'],
+      answerIndex: 1
+    },
+    {
+      id: 'q24',
+      category: 'Chemistry',
+      difficulty: 'medium',
+      question: 'Which of the following is a metallic element, composes about 5% of the Earth’s crust, oxidizes very easily, and when pure is a dark, silver-grey metal:',
+      options: ['cobalt', 'nickel', 'iron', 'titanium'],
+      answerIndex: 2
+    },
+    {
+      id: 'q25',
+      category: 'Physics',
+      difficulty: 'easy',
+      question: 'Upon which of the following does the mass of a body MOST directly depend:',
+      options: ['its magnetic properties', 'how much volume it has', 'the amount of matter it contains', 'its location'],
+      answerIndex: 2
+    },
+    {
+      id: 'q26',
+      category: 'Physics',
+      difficulty: 'medium',
+      question: 'Mary and Joe are on a merry-go-round. Mary is seated near the center of rotation and Joe is on the outer edge. Which of the following BEST describes their motion:',
+      options: ['Mary has a greater acceleration than Joe', 'Joe has a greater acceleration than Mary', 'neither Mary nor Joe are accelerating', 'both Mary and Joe have the same acceleration'],
+      answerIndex: 1
+    },
+    {
+      id: 'q27',
+      category: 'Earth and Space Science',
+      difficulty: 'medium',
+      question: 'Which of the following terms best describes the albedo of a planet:',
+      options: ['electromagnetic energy', 'density', 'reflectivity', 'absorption'],
+      answerIndex: 2
+    },
+    {
+      id: 'q28',
+      category: 'Earth and Space Science',
+      difficulty: 'medium',
+      question: 'Which of the following is NOT true of what occurs during an equinox:',
+      options: ['equal length of day and night except at the poles', 'the Earth is not tilted with respect to the ecliptic', 'the Sun is directly overhead at the equator', 'the Moon is directly overhead at the poles'],
+      answerIndex: 3
+    },
+    {
+      id: 'q29',
+      category: 'Biology',
+      difficulty: 'medium',
+      question: 'If a plant had a taproot, it would also most likely have:',
+      options: ['parallel leaf venation', 'two cotyledons in its seedling stage', 'diffusely arranged vascular bundles in its stem', 'no stomata on the upper surfaces of its leaves'],
+      answerIndex: 1
+    },
+    {
+      id: 'q30',
+      category: 'Physics',
+      difficulty: 'medium',
+      question: 'Martin is swinging a yo-yo in a large room with a circular motion perpendicular to a level floor. If the yo-yo breaks away from its string at the top of the yo-yo’s circular path, in what direction will the yo-yo initially move:',
+      options: ['at an angle between horizontal and vertical', 'straight up, toward the ceiling', 'straight down, to the floor', 'horizontally, tangent to its original circular path'],
+      answerIndex: 3
+    },
+    {
+      id: 'q31',
+      category: 'Chemistry',
+      difficulty: 'hard',
+      question: 'Which of the following pure substances has the highest melting point at 1 atmosphere of pressure:',
+      options: ['magnesium oxide', 'diamond', 'sodium chloride', 'cesium chloride'],
+      answerIndex: 1
+    },
+    {
+      id: 'q32',
+      category: 'Mathematics',
+      difficulty: 'medium',
+      question: 'Which of the following numbers is evenly divisible by both 11 and 3:',
+      options: ['7791', '7553', '5181', '8769'],
+      answerIndex: 2
+    },
+    {
+      id: 'q33',
+      category: 'Mathematics',
+      difficulty: 'easy',
+      question: 'What is the smaller of two integers whose sum is 19 and whose product is 48?',
+      options: ['2', '3', '4', '6'],
+      answerIndex: 1
+    },
+    {
+      id: 'q34',
+      category: 'Mathematics',
+      difficulty: 'medium',
+      question: 'One-fifth of 0.04% is equal to:',
+      options: ['8 × 10⁻²', '8 × 10⁻³', '8 × 10⁻⁴', '8 × 10⁻⁵'],
+      answerIndex: 3
+    },
+    {
+      id: 'q35',
+      category: 'Mathematics',
+      difficulty: 'easy',
+      question: 'Find the prime factorization of 240:',
+      options: ['2 × 2 × 2 × 3 × 5', '2 × 2 × 2 × 2 × 3 × 5', '2 × 3 × 5 × 8', '2 × 2 × 3 × 10'],
+      answerIndex: 1
+    },
+    {
+      id: 'q36',
+      category: 'Mathematics',
+      difficulty: 'medium',
+      question: 'Giving your answer in centimeters, what is the length of a side of a square whose diagonal measures 12√2 centimeters?',
+      options: ['6', '12', '24', '12√2'],
+      answerIndex: 1
+    },
+    {
+      id: 'q37',
+      category: 'Mathematics',
+      difficulty: 'medium',
+      question: 'Multiply the following 4 numbers and give your answer in scientific notation: 30,000 × 3,000 × 30 × 0.1',
+      options: ['2.7 × 10⁶', '2.7 × 10⁷', '2.7 × 10⁸', '2.7 × 10⁹'],
+      answerIndex: 2
+    },
+    {
+      id: 'q38',
+      category: 'Mathematics',
+      difficulty: 'medium',
+      question: 'Simplify the following expression by combining like terms: 12.03A – 4.03B – 0.03(A – 40)',
+      options: ['12A – 4.03B + 1.2', '12A + 4.03B + 1.2', '12.06A – 4.03B – 1.2', '11.97A – 4.03B + 1.2'],
+      answerIndex: 0
+    },
+    {
+      id: 'q39',
+      category: 'Earth and Space Science',
+      difficulty: 'easy',
+      question: 'Which of the following is best classified as a plutonic intrusive rock:',
+      options: ['obsidian', 'granite', 'basalt', 'pumice'],
+      answerIndex: 1
+    },
+    {
+      id: 'q40',
+      category: 'Earth and Space Science',
+      difficulty: 'easy',
+      question: 'The principle constituent of most granites is:',
+      options: ['feldspar', 'muscovite', 'calcite', 'dolomite'],
+      answerIndex: 0
+    },
+    {
+      id: 'q41',
+      category: 'General Science',
+      difficulty: 'easy',
+      question: 'The related quantities charted on a line graph are most often called:',
+      options: ['results', 'lines', 'sets', 'variables'],
+      answerIndex: 3
+    },
+    {
+      id: 'q42',
+      category: 'Chemistry',
+      difficulty: 'medium',
+      question: 'Group 1 cations and group 7 anions combine to form:',
+      options: ['metal alloys', 'alkali halides', 'alkaloids', 'organometallic compounds'],
+      answerIndex: 1
+    },
+    {
+      id: 'q43',
+      category: 'Physics',
+      difficulty: 'medium',
+      question: 'A child learns that mixing approximately equal amounts of the paint colors orange and green produces brown. This is an example of:',
+      options: ['additive color mixing', 'summative color generation', 'subtractive color synthesis', 'neutral coloration'],
+      answerIndex: 2
+    },
+    {
+      id: 'q44',
+      category: 'Mathematics',
+      difficulty: 'medium',
+      question: 'One-fifth of 0.04% is equal to:',
+      options: ['8 × 10⁻²', '8 × 10⁻³', '8 × 10⁻⁴', '8 × 10⁻⁵'],
+      answerIndex: 3
+    },
+    {
+      id: 'q45',
+      category: 'Earth and Space Science',
+      difficulty: 'medium',
+      question: 'When spreading centers reach above the ocean’s surface, they typically form which of the following types of volcanoes:',
+      options: ['shield', 'composite', 'stratovolcano', 'cinder cone'],
+      answerIndex: 0
+    },
+    {
+      id: 'q46',
+      category: 'Earth and Space Science',
+      difficulty: 'medium',
+      question: 'Mount Vesuvius in Italy is a typical:',
+      options: ['mud volcano', 'caldera', 'cinder cone', 'composite volcano'],
+      answerIndex: 3
+    },
+    {
+      id: 'q47',
+      category: 'Chemistry',
+      difficulty: 'medium',
+      question: 'Which of the following substances is water soluble:',
+      options: ['ethanol', 'dichloromethane', 'chloroform', 'benzene'],
+      answerIndex: 0
+    },
+    {
+      id: 'q48',
+      category: 'General Science',
+      difficulty: 'easy',
+      question: 'Anthropogenic means:',
+      options: ['generated by humans', 'created many years ago', 'carried in primate genes', 'harmful to elderly people'],
+      answerIndex: 0
+    },
+    {
+      id: 'q49',
+      category: 'Physics',
+      difficulty: 'medium',
+      question: 'Jay walks to his car and drives to the store. The trip takes 20 minutes. Jay figures how far he traveled on foot and by car and divides the distance by how long the trip took. Which of the following BEST describes what Jay has computed:',
+      options: ['total velocity', 'average acceleration', 'average speed', 'instantaneous velocity'],
+      answerIndex: 2
     }
   ];
 }
