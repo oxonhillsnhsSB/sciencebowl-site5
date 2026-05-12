@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Science Bowl Practice Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page" id="login-screen">
+    <div class="card auth-card">
+      <h1>Science Bowl Login</h1>
+      <p>Access is restricted. Please enter your credentials.</p>
+      <label>Username</label>
+      <input id="login-username" placeholder="Enter username" autocomplete="username" />
+      <label>Password</label>
+      <input id="login-password" type="password" placeholder="Enter password" autocomplete="current-password" />
+      <label>Your Name</label>
+      <input id="login-displayname" placeholder="Name for leaderboard" />
+      <button id="login-button">Sign In</button>
+      <p class="error" id="login-error"></p>
+    </div>
+  </div>
+
+  <div class="page hidden" id="app-screen">
+    <header>
+      <div>
+        <h1>Science Bowl Hub</h1>
+        <p id="welcome-text"></p>
+      </div>
+      <div class="top-buttons">
+        <button id="leaderboard-button">Leaderboard</button>
+        <button id="question-editor-button">Question Editor</button>
+        <button id="logout-button" class="danger">Log Out</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="grid">
+        <div class="card mode-card" id="daily-card">
+          <h2>Daily Login</h2>
+          <p>5 multiple choice questions each day. 2 easy, 2 medium, 1 hard. Answers after completion.</p>
+          <button id="start-daily">Start Daily Mode</button>
+        </div>
+        <div class="card mode-card" id="practice-card">
+          <h2>Practice Mode</h2>
+          <p>Choose a science branch or randomized questions to practice with timed multiple choice.</p>
+          <button id="start-practice">Start Practice Mode</button>
+        </div>
+        <div class="card mode-card" id="buzzer-card">
+          <h2>Buzzer Mode</h2>
+          <p>Compete in a fast-paced buzzer game! Red vs Blue - first to buzz gets to answer. Play vs computer or vs a friend.</p>
+          <button id="start-buzzer">Start Buzzer Mode</button>
+        </div>
+      </section>
+
+      <section class="status-panel card" id="user-status-panel">
+        <h2>Current Stats</h2>
+        <div class="stats-grid">
+          <div><strong>Daily Points:</strong> <span id="stat-daily">0</span></div>
+          <div><strong>Practice Points:</strong> <span id="stat-practice">0</span></div>
+          <div><strong>Buzzer Points:</strong> <span id="stat-buzzer">0</span></div>
+          <div><strong>Total Points:</strong> <span id="stat-total">0</span></div>
+          <div><strong>Daily Streak:</strong> <span id="stat-streak">0</span></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="overlay hidden" id="mode-screen">
+    <div class="card mode-card-lg">
+      <button class="close-button" id="close-mode">×</button>
+      <div id="mode-content"></div>
+    </div>
+  </div>
+
+  <template id="question-template">
+    <div class="question-block">
+      <p class="question-text"></p>
+      <div class="options"></div>
+      <p class="explanation hidden"></p>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
