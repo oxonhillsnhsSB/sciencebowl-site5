@@ -197,11 +197,11 @@ function showLeaderboard() {
 }
 
 function showQuestionEditor() {
-  const editorPassword = prompt('Enter the password to access the Question Editor:');
-  if (editorPassword !== 'editquestions') {
-    alert('Incorrect password. Access denied.');
-    return;
-  }
+  // const editorPassword = prompt('Enter the password to access the Question Editor:');
+  // if (editorPassword !== 'editquestions') {
+  //   alert('Incorrect password. Access denied.');
+  //   return;
+  // }
 
   const rows = appData.questions
     .map((question, idx) => `
